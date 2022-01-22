@@ -1,0 +1,73 @@
+* , *::after ,*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body
+{
+    background-color: rgb(25, 161, 173);
+    min-height: 100vh;
+    background-image: url('../images/bg-pattern-top.svg') ,url('../images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat ,no-repeat;
+    background-position:  right 48vw bottom 40vh ,  left 45vw top 44vh;
+    display: flex;
+    align-items: center;
+}
+.container
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    min-height: 300px;
+    display: grid;
+    grid-template-rows: 2fr 2fr 1fr;
+    padding: 0;
+    text-align: center;
+}
+
+.container .image
+{
+    padding: 0;
+    background-image: url('../images/bg-pattern-card.svg');
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.container span{
+    color: rgb(224, 222, 235);
+    
+}
+.container .info
+{
+  background-color: #fff; 
+  border-bottom: 1.5px solid ;
+  border-color: rgb(224, 222, 235); 
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+.container .info img
+{
+    border-radius: 50%;
+    border: 2px double rgb(231, 25, 25);
+    margin-top: -50px;
+    margin-bottom: 15px;
+}
+.container .followers
+{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+}
+.followers h3
+{
+    color: #2a9d8f;
+}
+.copy
+{
+    color: #2a9d8f;
+    background-color: blue;
+}
+
